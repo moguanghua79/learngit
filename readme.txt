@@ -11,4 +11,7 @@ Git is free software.
 要随时掌握工作区的状态，使用git status命令
 如果git status告诉你有文件被修改过，用git diff可以查看修改内容（git diff readme.txt）
 
-append GPL
+版本回退
+git log <--pretty=oneline> 命令显示从最近到最远的提交日志
+回退版本 git reset --hard HEAD^ git reset --hard HEAD^^ git reset --hard HEAD~100 git reset --hard commit_id
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
